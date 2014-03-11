@@ -19,6 +19,7 @@ This module serves as the Debuging environment and default implementation for in
   <inherits name='com.google.gwt.xml.XML'/>
   <inherits name='com.google.gwt.http.HTTP'/>
   <inherits name='com.google.gwt.json.JSON' />
+  <inherits name="com.google.gwt.i18n.I18N"/>
   <inherits name="org.pentaho.gwt.widgets.Widgets"/>
   <inherits name="org.pentaho.ui.xul.Gwt"/>
   <inherits name="org.pentaho.gwt.widgets.login.Login"/>
@@ -88,6 +89,9 @@ This module serves as the Debuging environment and default implementation for in
 
     </source>
    <public path="wizard/public"/>
+
+  <!-- RTL support for Arabic locale -->
+  <extend-property name="locale" values="ar" />
 
 <!-- **SuperDevMode** == Uncomment this and re-build to get a SuperDevMode compatible build
   <add-linker name="xsiframe"/>
